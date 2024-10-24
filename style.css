@@ -1,6 +1,43 @@
-#bruxa{
-width: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+#bruxa {
+    width: 100px;
+    position: absolute;
+    animation: bruxa 6s infinite;
+    animation: bruxa 6s 6s infinite;
+}
+
+@keyframes bruxa{
+
+100%{transform: translateX(1200px);}
 
 
 
+
+}
+
+
+#fundo {
+    background-color: #FF8C00;
+    margin-top: 200px;
+    animation: animate__slideInLeft cubic-bezier(0.25, 0.8, 0.5, 1) infinite;
+}
+    
+#sobreposicao {
+    background-color: #FF8C00;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    animation: slideInLeft cubic-bezier(0.25, 0.8, 0.5, 1) infinite;
+}
+
+h1 {
+    font-family: "Creepster";
+    letter-spacing: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
 }
