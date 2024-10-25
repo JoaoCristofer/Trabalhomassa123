@@ -1,20 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
+#abroba {
+position: absolute;
+margin-top: 100px;
+width:80px ;
+left: 600px;
+z-index: 1;
+opacity: 0;
+animation: abroba 1ms 10.6s forwards  ;
+
+}
+@keyframes abroba{
+
+100%{opacity: 1;}
+
+
+}
+
+
+
 #bruxa {
     width: 100px;
     position: absolute;
-    animation: bruxa 6s infinite;
+    animation: bruxa 15s ease;
     margin-top: 60px;
     z-index: 2;
-    background-color: red;
 }
 
-@keyframes bruxa{
+#bruxafrente {
+    width: 100px;
+    position: absolute;
+    margin-top: 60px;
+    left: 1056px;
+    z-index: 1;
+    opacity: 0;
+    animation: bruxafrente 3s 6s;
+}
 
-100%{transform: translateX(1100px);}
+
+@keyframes bruxafrente {
+    0% {
+        opacity: 0;
+    }
+
+    0.001% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
 
 
 
+
+
+
+
+
+@keyframes bruxa {
+
+    40% {
+        transform: translateX(1050px);
+        opacity: 1;
+    }
+
+    40.0001% {
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(1050px)scaleX(-1);
+        opacity: 0;
+
+    }
+
+    60.001% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0px)scaleX(-1);
+    }
 
 }
 
@@ -22,10 +91,11 @@
 #fundo {
     background-color: #ffffff;
     margin-top: 200px;
-justify-content: center;display: flex;
+    justify-content: center;
+    display: flex;
 
 }
-    
+
 #sobreposição {
     background-color: #ffffff;
     width: 100%;
@@ -33,8 +103,9 @@ justify-content: center;display: flex;
     display: flex;
     position: absolute;
     top: 285px;
-    animation: escrita 6s infinite ;
-    z-index: 1;
+    animation: escrita 15s forwards;
+    z-index: 0;
+    margin-left: 115px;
 }
 
 h1 {
@@ -44,7 +115,19 @@ h1 {
     align-items: center;
     font-size: 100px;
 }
-@keyframes escrita {100%{transform: translateX(1100px);}
 
-    
+@keyframes escrita {
+    40% {
+        transform: translateX(1050px);
+
+    }
+
+    60% {
+        transform: translateX(1050px)scaleX(-1);
+
+    }
+
+    100% {
+        transform: translateX(0px)scaleX(-1);
+    }
 }
