@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-
+body{background-color: orange;}
 #abroba {
 position: absolute;
 margin-top: 100px;
@@ -7,15 +7,61 @@ width:80px ;
 left: 600px;
 z-index: 1;
 opacity: 0;
-animation: abroba 1ms 10.6s forwards  ;
+animation: abroba 5.9s 10.6s   ;
+}#convite{
+
+    position: absolute;
+    margin-top: 100px;
+    width:80px ;
+    left: 600px;
+    z-index: 2;
+    opacity: 0;
+animation: convite 3.5s 16.5s forwards;
+border-radius: 10px;
+
+
+
+
+
 
 }
-@keyframes abroba{
+@keyframes convite{
+0%{opacity: 1;
+    
+}
+100%{scale: 7;
+opacity: 1;}
 
+
+}
+
+
+
+
+@keyframes abroba{
+0%{opacity: 1;}
 100%{opacity: 1;}
 
 
 }
+
+#explosao{position: absolute;
+width: 400px;
+left: 430px;
+top: 120px;
+z-index: 2;
+opacity: 0;
+animation: explosao 1s 16.5s; 
+}
+@keyframes explosao {
+    0%{opacity: 1;}
+    100%{opacity: 1;}
+    
+}
+
+
+
+
 
 
 
@@ -89,7 +135,7 @@ animation: abroba 1ms 10.6s forwards  ;
 
 
 #fundo {
-    background-color: #ffffff;
+    background-color: orange;
     margin-top: 200px;
     justify-content: center;
     display: flex;
@@ -97,7 +143,7 @@ animation: abroba 1ms 10.6s forwards  ;
 }
 
 #sobreposição {
-    background-color: #ffffff;
+    background-color: orange;
     width: 100%;
     height: 100px;
     display: flex;
